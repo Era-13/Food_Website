@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+   display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+   
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+
+header {background: Cornsilk;}
+footer {background: DarkKhaki;color:black;}
+.nav {background:Moccasin;}
+
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1></h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="#">London</a></li>
+  <li><a href="#">Paris</a></li>
+  <li><a href="#">Tokyo</a></li>
+</ul>
+</nav>
+
+<footer>Copyright © khai_dai.com</footer>
+</div>
+
+</body>
+</html>

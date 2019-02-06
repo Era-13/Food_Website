@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ 
+header {font-family:segoe print;color:#502916; margin-left:150px}
+footer {background:#e4ba4e;color:#502916; font-family:times new roman;}
+.nav {background:khaki; font-family:impact; color:#502916;}
+body{background-image: url("wallpaper.jpeg")}
+ul {
+    list-style-type: none
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	 
+}
+.nav li{
+    float: left;
+	 border-right:1px solid #bbb;
+}
+.nav li:last-child {
+    border-right: none;
+}
+.nav li a {
+    display: block;
+    color:  #502916;	
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	
+}
+
+.nav li a:hover:not(.active) {
+    background-color:#eadd61;color:#502916 ;
+}
+
+
+
+footer li {
+    float: left;
+	 border-right:1px solid #bbb;
+}
+
+footer li a {
+    display: block;
+    color: #502916;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+footer li a:hover:not(.active) {
+    background-color:#eadd61;color:#502916;
+}
+div{ 
+   margin-right: 150px;
+   margin-left: 150px;
+.mySlides {display:none;}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+}
+
+</style>
+</head>
+<body>
+<header>
+ <h1><img src="waiter1.jpg" style="width:214px;height:164px;" "style:top-left"><img src="logo.png" style="width:214px;height:164px;" "style:top-left"> <img src="waiter.jpg" style="width:214px;height:164px;"></h1>
+  
+ <h1 ><b>Grab your favourite item within a short item!!!</b></h1>
+</header>
+
+<nav class="nav">
+<ul >
+   <li><a href="home.html"target="_blank">Home</a></li>
+  <li><a href="#news">Restuarent</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">Order</a></li>
+</ul>
+</nav>
+
+<div class="w3-content w3-section">
+  <img class="mySlides" src="food1.jpg" style="width:1000px;height:500px">
+  <img class="mySlides" src="food2.jpg" style="width:1000px;height:500px">
+  <img class="mySlides" src="food3.jpg" style="width:1000px;height:500px">
+   <img class="mySlides" src="food4.jpg" style="width:1000px;height:500px">
+    <img class="mySlides" src="food6.jpg" style="width:1000px;height:500px">
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<footer>
+<footer class="footer">
+<ul>
+   <li><a  href="#privacy">Privacy</a></li>
+  <li><a  href="#terms">Terms and Condition</a></li>
+  <li style="float:right">Copyright khai-dai is a registered trademark</li> 
+</ul>
+
+</footer>
+</div>
+
+</body>
+</html>
+
